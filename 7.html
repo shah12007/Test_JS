@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+
+<body>
+    <h1>Заголовок1</h1>
+    <h2>Заголовок2</h2>
+    <h3>Заголовок3</h3>
+    <h4>Заголовок4</h4>
+
+    <div id="1">Параграф1</div>
+    <div id="2">Параграф2</div>
+    <div id="3">Параграф3</div>
+    <div id="4">Параграф4</div>
+
+
+    <a href="google.com">ссылка1</a>
+    <a href="yandex.ru">ссылка2</a>
+    <a href="finam.ru">ссылка3</a>
+    <a href="mail.ru">ссылка4</a>
+    <script>
+        var a = prompt("Введите число");
+        var s = 0;
+
+        function Sum(a) {
+            while (a > 0) {
+
+                s += a % 10;
+                a = Math.floor(a / 10);
+            }
+            alert("Сумма: " + s);
+        }
+        Sum(a);
+    </script>
+</body>
+
+</html>

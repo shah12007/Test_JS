@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+</head>
+
+<body>
+    <h1>Заголовок1</h1>
+    <h2>Заголовок2</h2>
+    <h3>Заголовок3</h3>
+    <h4>Заголовок4</h4>
+
+    <div id="1">Параграф1</div>
+    <div id="2">Параграф2</div>
+    <div id="3">Параграф3</div>
+    <div id="4">Параграф4</div>
+
+
+    <a href="google.com">ссылка1</a>
+    <a href="yandex.ru">ссылка2</a>
+    <a href="finam.ru">ссылка3</a>
+    <a href="mail.ru">ссылка4</a>
+    <script>
+        var lang = prompt('Выберите eng или heb');
+        var arr = [];
+        if (lang == 'eng') {
+            arr = ['sunday', 'mondey', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+        }
+        if (lang == 'heb') {
+            arr = ['yom rishon', 'yom sheni', 'yom shlishi', 'yom r-vi-i', 'yom hashimi', 'yom shishi', 'yom shabat'];
+        }
+        if (lang != 'en' && lang != 'heb')
+            arr = 'данные не верны';
+        alert(arr);
+    </script>
+</body>
+
+</html>

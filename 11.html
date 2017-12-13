@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js">
+    </script>
+</head>
+
+<body>
+    <h1>Заголовок1</h1>
+    <h2>Заголовок2</h2>
+    <h3>Заголовок3</h3>
+    <h4>Заголовок4</h4>
+
+    <div id="1"> 0</div>
+    <div id="2">Параграф2</div>
+    <div id="3">Параграф3</div>
+    <div id="4">Параграф4</div>
+
+
+    <a href="google.com">ссылка1</a>
+    <a href="yandex.ru">ссылка2</a>
+    <a href="finam.ru">ссылка3</a>
+    <a href="mail.ru">ссылка4</a>
+
+    <input type="submit" value="Запустить таймер!" onclick="go()" id="go">
+    <input type="submit" value="Остановить таймер!" onclick="stop()" id="stop" disabled>
+
+    <script>
+        function go() {
+            window.timerId = window.setInterval(timer, 500);
+            document.getElementById('go').disabled = true;
+            document.getElementById('stop').disabled = false;
+        }
+
+        function stop() {
+            window.clearInterval(window.timerId);
+            document.getElementById('go').disabled = false;
+            document.getElementById('stop').disabled = true;
+        }
+
+        function timer() {
+            var test = document.getElementById('1');
+            test.innerHTML = parseInt(test.innerHTML) + 1;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>1</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.js"></script>
+</head>
+
+<body>
+    <h1>Заголовок1</h1>
+    <h2>Заголовок2</h2>
+    <h3>Заголовок3</h3>
+    <h4>Заголовок4</h4>
+
+    <div id="1">Параграф1</div>
+    <div id="2">Параграф2</div>
+    <div id="3">Параграф3</div>
+    <div id="4">Параграф4</div>
+
+
+    <a href="google.com">ссылка1</a>
+    <a href="yandex.ru">ссылка2</a>
+    <a href="finam.ru">ссылка3</a>
+    <a href="mail.ru">ссылка4</a>
+
+    <script>
+        function getSecondsToTomorrow() {
+            var now = new Date();
+
+
+            var tomorrow = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+
+            var diff = tomorrow - now;
+            Math.round(diff / 1000);
+
+            alert(diff);
+            document.getElementById("1").innerHTML = diff;
+        }
+        getSecondsToTomorrow();
+    </script>
+</body>
+
+</html>
